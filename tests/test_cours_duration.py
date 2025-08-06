@@ -1,5 +1,6 @@
 import sys
-sys.path.append("..")
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import cours_duration as cd # custom module
 import unittest
 from itertools import chain
